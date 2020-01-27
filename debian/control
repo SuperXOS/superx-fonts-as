@@ -1,0 +1,14 @@
+Source: superx-fonts-as
+Section: fonts
+Priority: optional
+Maintainer: Wrishiraj Kaushik <wrix@libresoft.in>
+Build-Depends: debhelper (>= 8.0.0)
+Standards-Version: 3.9.5
+
+Package: superx-fonts-as
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Pre-Depends: dpkg (>= 1.15.6~)
+Description: Collection of Assamese fonts for SuperX
+ This package contains a collection of Assamese fonts for SuperX and SuperX Pro.
