@@ -1,0 +1,8 @@
+language: minimal
+addons:
+  apt:
+    update: true
+    packages:
+        - debhelper
+        - fakeroot
+script: dpkg-buildpackage -us -uc
