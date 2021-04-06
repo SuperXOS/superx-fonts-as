@@ -9,4 +9,4 @@ jobs:
       - uses: legoktm/gh-action-build-deb@debian-bullseye
         id: build-debian-bullseye
         with:
-          args: --nosign
+          args: -us -uc
