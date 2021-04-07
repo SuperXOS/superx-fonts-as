@@ -10,5 +10,5 @@ Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends}
 Pre-Depends: dpkg (>= 1.15.6~)
-Description: Collection of Assamese fonts for SuperX
- This package contains a collection of Assamese fonts for SuperX and SuperX Pro.
+Description: Collection of Assamese (অসমীয়া) fonts for SuperX
+ This package contains a collection of Assamese (অসমীয়া) fonts for SuperX and SuperX Pro.
