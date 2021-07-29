@@ -10,3 +10,10 @@ jobs:
         id: build-debian-bullseye
         with:
           args: -us -uc
+        
+      - uses: actions/upload-artifact@v2.2.4
+      with:	
+        name: fonts-as
+        path: ${{ github.workspace }}/*.deb
+
+

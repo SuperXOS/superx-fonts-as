@@ -1,6 +1,12 @@
+superx-fonts-as (6.0) Lamarr; urgency=medium
+
+  Repackage for SuperX 6.0.
+  
+  -- Wrishiraj Kaushik <wrix@libresoft.in>  Tue, 24 Apr 2018 20:06:04 +0530
+
 superx-fonts-as (5.0) Lamarr; urgency=medium
 
-  Initial Release
+  Initial Release.
 
  -- Wrishiraj Kaushik <wrix@libresoft.in>  Mon, 27 Jan 2020 14:34:07 +0530
  
