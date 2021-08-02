@@ -5,6 +5,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      - run: |
+          mv $GITHUB_WORKSPACE/superx-fonts-as/debian/changelog $GITHUB_WORKSPACE/superx-fonts-as/debian/changelog.old
+          cat << CHANGELOG > $GITHUB_WORKSPACE/superx-fonts-as/debian/changelog
+superx-fonts-as (6.0+superx${GITHUB_RUN_NUMBER}) unstable; urgency=medium
+
+  * $CHANGES
+  * Automatic CI Build
+
+ -- Libresoft CI <ci@libresoft.in>  $(date -R)
+
+CHANGELOG
 
       - uses: legoktm/gh-action-build-deb@debian-bullseye
         id: build-debian-bullseye
@@ -15,12 +26,5 @@ jobs:
         with:	
             name: fonts-as
             path: output
-            
-  download-artifcat:
-    needs: build-deb
-    runs-on: self-hosted
-    steps:      
-      - uses: actions/download-artifact@v2
-        with:
-          name: fonts-as
+
 
