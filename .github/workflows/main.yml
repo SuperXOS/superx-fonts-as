@@ -17,6 +17,7 @@ jobs:
             path: output
             
   download-artifcat:
+    needs: build-deb
     runs-on: Workstation1
     steps:      
       - uses: actions/download-artifact@v2
