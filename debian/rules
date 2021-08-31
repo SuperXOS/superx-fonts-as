@@ -4,5 +4,5 @@
 	dh $@
 
 override_dh_builddeb:
-	dh_builddeb -- -Zxz -Sextreme -z9
+	dh_builddeb
 
